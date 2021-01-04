@@ -1,0 +1,685 @@
+@media only screen and (max-width: 1024px)
+{
+    header
+    {
+        position: relative;
+    }
+    /* .navigation .menu, */
+    .navigation .quote
+    {
+        display: none;
+    }
+    .navigation .menu
+    {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #fff;
+        top: 81px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    .navigation .menu.active
+    {
+        left: 0;
+    }
+    .navigation ul
+    {
+        display: block;
+        text-align: center;
+    }
+    .navigation
+    {
+        top: 0px;
+        z-index: 9999;
+    }
+    .menu-toggle 
+    {
+        display: inline;
+        font-size: 1.5em;
+    }
+    header
+    {
+        display: block;
+        justify-content: center;
+        top: 85px;
+    }
+    header .contact
+    {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    header .contact .details,
+    header .social .details
+    {
+        justify-content: center;
+    }
+    header .social
+    {
+        width: 100%;
+    }
+    header .social .details
+    {
+        margin: 20px 0;
+    }
+    header .social .details li .icons
+    {
+        height: 60px;
+        width: 70px;
+    }
+    header .social .details li i
+    {
+        font-size: 2em;
+    }
+    .navigation .logo
+    {
+        width: 60%;
+        font-size: 2.5em;
+    }
+    .navigation .menu li
+    {
+        padding: 50px 0;
+    }
+    .navigation .menu li a
+    {
+        font-size: 2.5em;
+    }
+    .banner,
+    .services .content .info
+    {
+        justify-content: center;
+        text-align: center;
+    }
+    .banner .content
+    {
+        max-width: 100%;
+    }
+    .banner .content h2
+    {
+        font-size: 4em;
+    }
+    .banner .content p
+    {
+        font-size: 2.2em;
+    }
+    .banner .content .call
+    {
+        font-size: 2.2em;
+    }
+    .services .content
+    {
+        display: block;
+    }
+    .services .content .info
+    {
+        width: 100%;
+        padding-right: none;
+        margin-bottom: 50px;
+    }
+    .services .content .info h3,
+    .service-info .content h2
+    {
+        font-size: 3em;
+    }
+    .services .content .info p
+    {
+        font-size: 1.5em;
+        line-height: 1.8em;
+    }
+    .services .content .info .quote,
+    .about .content div:nth-child(1) .quote,
+    .contacts .content .email .quote,
+    .brochure .content .quote
+    {
+        font-size: 2.5em;
+    }
+    .services .content .sr-img img
+    {
+        padding: 20px;
+        border: 1px solid #dcdde1;
+    }
+    .services .content .choices
+    {
+        width: 100%;
+    }
+    .services .content .choices
+    {
+        padding: 0;
+    }
+    .services .content .choices .option li i
+    {
+        font-size: 2em;
+    }
+    .services .content .choices .option li a
+    {
+        font-size: 1.5em;
+    }
+    .service-info
+    {
+        height: 100vh;
+    }
+    .service-info .content
+    {
+        widtH: 75%;
+    }
+    .service-info .content p
+    {
+        font-size: 1.8em;
+    }
+    .about .content,
+    .contacts .content
+    {
+        display: block;
+        text-align: center;
+    }
+    .about .content .left
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .about .content div:nth-child(1) h3,
+    .contacts .content .email h3,
+    .brochure .content h3
+    {
+        font-size: 3em;
+    }
+    .about .content div:nth-child(1) p,
+    .brochure .content p
+    {
+        font-size: 1.8em;
+    }
+    .about .content .right
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    .about-info .content blockquote
+    {
+        font-size: 2em;
+    }
+    .about .content .left .cta
+    {
+        flex-direction: column;
+    }
+    .about .content .left .cta .quote
+    {
+        height: auto;
+        width: auto;
+        margin: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about .content .left .cta .quote:nth-child(2)
+    {
+        width: auto;
+    }
+    .brochure .content img
+    {
+        height: auto;
+        width: 100%;
+    }
+    .contacts .content .email
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+    .contacts .content .email .text.text-normal
+    {
+        width: 100%;
+    }
+    .contacts .content .email .text:nth-child(1),
+    .contacts .content .email .text:nth-child(2),
+    .contacts .content .email .text:nth-child(3)
+    {
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 1.8em;
+    }
+    .contacts .content .email .text.text-area
+    {
+        width: 100%;
+    }
+    .contacts .content .contact-info
+    {
+        width: 100%;
+    }
+    .content .contact-info h3
+    {
+        font-size: 3em;
+    }
+    .content .contact-info p strong
+    {
+        font-size: 1.5em;
+    }
+    .contacts .content .contact-info p
+    {
+        font-size: 1.8em;
+    }
+    .footer .content p strong
+    {
+        font-size: 3em;
+    }
+    .footer .content .description
+    {
+        font-size: 1.2em;
+    }
+    .navigation .menu li
+    {
+        margin: 0;
+    }
+    .all-gift .content .gift
+    {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .all-services .content .care,
+    .all-faq .content .faq,
+    .all-gift .content .gift
+    {
+        flex-direction: column;
+    }
+    .all-services .content h2,
+    .all-faq .content h2,
+    .all-gift .content h2
+    {
+        text-align: center;
+        font-size: 3em;
+    }
+    .all-services .content .care .item,
+    .all-faq .content .faq .item,
+    .all-gift .content .gift .item
+    {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    .all-services .content .care .item h3
+    {
+        font-size: 2em;
+    }
+    .all-services .content .care .item .info .title,
+    .all-faq .content .faq .item .info .title,
+    .all-gift .content .gift .item .info .title
+    {
+        font-size: 1.8em;
+    }
+    .all-services .content .care .item .info p,
+    .all-faq .content .faq .item .info p,
+    .all-faq .content .faq .item .contact-for-faq .content p,
+    .all-gift .content .gift .item .info p
+    {
+        font-size: 1.5em;
+    }
+    .all-faq .content .faq .item .contact-for-faq .content p
+    {
+        max-width: 100%;
+    }
+    .all-faq .content .faq .item .contact-for-faq .content .quote
+    {
+        font-size: 2.5em;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .brochure .content .quote
+    {
+        font-size: 1.8em;
+    }
+}
+@media only screen and (max-width: 540px)
+{
+    header,
+    .navigation
+    {
+        padding: 10px 20px;
+    }
+    .navigation .logo
+    {
+        font-size: 1.5em;
+    }
+    .about-info .content blockquote
+    {
+        font-size: 1em;
+    }
+    .contacts .content .contact-info p
+    {
+        font-size: 1em;
+    }
+    .footer .content ul li a
+    {
+        font-size: 0.5em;
+    }
+    .navigation .menu
+    {
+        top: 57px;
+    }
+    .navigation .menu li a
+    {
+        font-size: 1.2em;
+    }
+    .navigation .menu li
+    {
+        padding: 25px 0;
+        margin: 0;
+    }
+    header .contact
+    {
+        font-size: 1em;
+        padding: 10px 0;
+        text-align: center;
+    }
+    header .contact .details
+    {
+        display: block;
+    }
+    header .social .details li .icons
+    {
+        height: 40px;
+        width: 40px;
+    }
+    header .social .details li i
+    {
+        font-size: 1.4em;
+    }
+    .banner
+    {
+        margin-top: 85px;
+    }
+    .banner .content
+    {
+        position: absolute;
+        max-width: 80%;
+    }
+    .banner .content h2
+    {
+        font-size: 2em;
+    }
+    .banner .content p
+    {
+        font-size: 1.2em;
+    }
+    .banner .content .call
+    {
+        font-size: 1.2em;
+    }
+    .services .content .info h3,
+    .service-info .content h2
+    {
+        font-size: 1.8em;
+    }
+    .services .content .info
+    {
+        padding-right: 0;
+    }
+    .services,
+    .about,
+    .brochure
+    {
+        padding: 100px 50px;
+    }
+    .services .content .info p
+    {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .services .content .info .quote,
+    .about .content div:nth-child(1) .quote,
+    .contacts .content .email .quote,
+    .brochure .content .quote
+    {
+        font-size: 1.2em;
+    }
+    .services .content .choices .option li a
+    {
+        font-size: 1em;
+    }
+    .services .content .choices .option li i
+    {
+        font-size: 1.5em;
+    }
+    .service-info .content
+    {
+        width: 85%;
+    }
+    .service-info .content p
+    {
+        font-size: 1em;
+    }
+    .about .content div:nth-child(1) h3,
+    .contacts .content .email h3,
+    .brochure .content h3
+    {
+        font-size: 1.8em;
+    }
+    .about .content div:nth-child(1) p,
+    .brochure .content p
+    {
+        font-size: 1em;
+    }
+    .about-info
+    {
+        padding: 100px 50px;
+    }
+    .contacts .content .email .text:nth-child(1),
+    .contacts .content .email .text:nth-child(2),
+    .contacts .content .email .text:nth-child(3)
+    {
+        font-size: 1em;
+    }
+    .contacts
+    {
+        padding: 100px 50px;
+    }
+    .content .contact-info h3
+    {
+        font-size: 1.8em;
+    }
+    .footer .content p strong
+    {
+        font-size: 1.3em;
+    }
+    .footer .content .description
+    {
+        font-size: 0.6em;
+    }
+    .footer
+    {
+        padding: 100px 50px;
+    }
+    .all-services,
+    .all-faq,
+    .all-gift
+    {
+        margin-top: 0;
+        padding: 50px 50px;
+        padding-top: 100px; 
+        padding-bottom: 100px;
+    }
+    .all-services .content h2,
+    .all-faq .content h2,
+    .all-gift .content h2
+    {
+        text-align: center;
+        font-size: 2em;
+    }
+    .all-services .content .care .item h3
+    {
+        font-size: 1.5em;
+    }
+    .all-services .content .care .item .info .title,
+    .all-faq .content .faq .item .info .title,
+    .all-gift .content .gift .item .info .title
+    {
+        font-size: 1.2em;
+    }
+    .all-services .content .care .item .info p,
+    .all-faq .content .faq .item .info p,
+    .all-gift .content .gift .item .info p
+    {
+        font-size: 0.9em;
+    }
+    .all-faq .content .faq .item .contact-for-faq .content p
+    {
+        font-size: 1em;
+    }
+    .all-faq .content .faq .item .contact-for-faq .content .quote
+    {
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 320px)
+{
+    .navigation .logo,
+    .menu-toggle
+    {
+        font-size: 1em;
+    }
+    header
+    {
+        top: 44px;
+    }
+    header .contact
+    {
+        font-size: 0.7em;
+        padding: 0;
+        padding-top: 10px;
+    }
+    header .social .details
+    {
+        margin: 10px 0;
+    }
+    header .social .details li .icons
+    {
+        height: 20px;
+        width: 20px;
+    }
+    header .social .details li i
+    {
+        font-size: 0.7em;
+    }
+    .banner
+    {
+        margin-top: 40px;
+    }
+    .footer .content ul li a
+    {
+        padding: 0 5px;
+    }
+    .banner .content h2
+    {
+        font-size: 1em;
+    }
+    .banner .content p
+    {
+        font-size: 0.8em;
+    }
+    .banner .content .call
+    {
+        font-size: 0.8em;
+    }
+    .navigation .menu
+    {
+        top: 45px;
+    }
+    .navigation .menu li a
+    {
+        font-size: 0.8em;
+    }
+    .navigation .menu li
+    {
+        padding: 10px 0;
+    }
+    .services .content .info h3,
+    .service-info .content h2
+    {
+        font-size: 1em;
+    }
+    .services,
+    .about
+    {
+        padding: 50px 30px;
+    }
+    .services .content .info p
+    {
+        font-size: 0.8em;
+    }
+    .services .content .info .quote,
+    .about .content div:nth-child(1) .quote,
+    .contacts .content .email .quote,
+    .brochure .content .quote
+    {
+        font-size: 0.8em;
+    }
+    .services .content .choices .option li a
+    {
+        font-size: 0.8em;
+    }
+    .services .content .choices .option li i
+    {
+        font-size: 1em;
+    }
+    .service-info .content p
+    {
+        font-size: 0.8em;
+    }
+    .about .content div:nth-child(1) h3,
+    .contacts .content .email h3,
+    .brochure .content h3
+    {
+        font-size: 1em;
+    }
+    .about .content div:nth-child(1) p,
+    .brochure .content p
+    {
+        font-size: 0.8em;
+    }
+    .about-info,
+    .contacts,
+    .footer
+    {
+        padding: 50px 30px;
+    }
+    .contacts .content .email .text:nth-child(1),
+    .contacts .content .email .text:nth-child(2),
+    .contacts .content .email .text:nth-child(3)
+    {
+        font-size: 0.8em;
+    }
+    .content .contact-info h3
+    {
+        font-size: 1em;
+    }
+    .contacts .content .contact-info p
+    {
+        font-size: 0.8em;
+    }
+    .content .contact-info p strong
+    {
+        font-size: 1em;
+    }
+    .about-info .content blockquote span
+    {
+        font-size: 1.2em;
+    }
+    .all-services .content h2, .all-faq .content h2
+    {
+        font-size: 1.5em;
+    }
+    .all-faq .content .faq .item
+    {
+        width: 100%;
+    }
+    .all-faq .content .faq .item .info .title
+    {
+        font-size: 1em;
+    }
+    .all-faq .content .faq .item .info p
+    {
+        font-size: 0.8em;
+    }
+    .all-faq .content .faq .item .contact-for-faq .content .quote
+    {
+        font-size: 1em;
+    }
+}

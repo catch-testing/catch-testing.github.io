@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Amazing Care | Elderly Care</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+        
+        <!-- Sending Email using SMTP -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="contact">
+                <ul class="details">
+                    <li><i class="lni lni-phone"></i>+1 (232) 349-8447</li>
+                    <li><i class="lni lni-envelope"></i>amazingcare@gmail.com</li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul class="details">
+                    <li><a href="#"><div class="icons"><i class="lni lni-instagram"></i></div></a></li>
+                    <li><a href="#"><div class="icons"><i class="lni lni-facebook"></i></div></a></li>
+                    <li><a href="#"><div class="icons"><i class="lni lni-twitter"></i></div></a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="navigation">
+            <a href="index.html" class="logo">AMAZING <span>CARE</span></a>
+            <ul class="menu">
+                <li><a class="close-toggle" href="#sec-banner">Home</a></li>
+                <li><a class="close-toggle" href="#sec-services">Services</a></li>
+                <li><a class="close-toggle" href="#sec-about">About Us</a></li>
+                <li><a class="close-toggle" href="#sec-brochure">Brochure</a></li>
+                <li><a class="close-toggle" href="#sec-contacts">Contacts</a></li>
+                <li><a class="close-toggle" href="faq.html">FAQ</a></li>
+            </ul>
+            <a href="#sec-contacts" class="quote"><div>Get a quote</div></a>
+            <div class="menu-toggle"><i class="lni lni-menu" aria-hidden="true"></i></div>
+        </section>
+        <section id="sec-banner" class="banner">
+            <div class="content">
+                <h2>
+                    Give your <span>LOVE</span> one the gift of <span>CARE</span>
+                </h2>
+                <p>We understand your frustrations when life has changed your loved ones ability to live independently.</p>
+                <a href="#sec-contacts"><span class="call"><i class="lni lni-chevron-down"></i>Get a quote</span></a>
+            </div>
+        </section>
+        <section id="sec-services" class="services">
+            <div class="content">
+                <div class="info">
+                    <h3 id="care-id">Personal Care</h3>
+                    <div id="personal-care" class="care-active">
+                        <p>This program assists on the area of <strong>Oral Hygiene</strong>, <strong>Incontinence Care</strong>, <strong>Toilet Assistance</strong>, <strong>Bathing Assistance</strong>, and <strong>Dressing Assistance</strong>.</p>
+                        <p>For more information regarding this program, kindly <a href="services.html" target="_blank" rel="noopener"><strong>click here</strong></a>.</p>
+                    </div>
+                    <div id="physical-care" class="care-info">
+                        <p>This program also offers <strong>Companionship</strong>, initiates <strong>Communication</strong>, <strong>Exercises</strong>, and <strong>Other Recreational Activities</strong>.</p>
+                        <p>For more information regarding this program, kindly <a href="services.html" target="_blank" rel="noopener"><strong>click here</strong></a>.</p>
+                    </div>
+                    <div id="food-nourishment" class="care-info">
+                        <p>This program also helps to provide good <strong>Meal Preparation</strong>, <strong>Communication</strong>, <strong>Special Diet</strong>, <strong>Eating Assistance</strong>, <strong>Medication Reminders</strong>, <strong>Alcohol and Cigarettes</strong>.</p>
+                        <p>For more information regarding this program, kindly <a href="services.html" target="_blank" rel="noopener"><strong>click here</strong></a>.</p>
+                    </div>
+                    <div id="house-care" class="care-info">
+                        <p>This program also offers <strong>Light Housekeeping</strong>, <strong>Shopping</strong>, <strong>Running Errands</strong>, <strong>Laundry Services</strong>, <strong>Incoming Mail Organization</strong>, and <strong>Home Safety</strong>.</p>
+                        <p>For more information regarding this program, kindly <a href="services.html" target="_blank" rel="noopener"><strong>click here</strong></a>.</p>
+                    </div>
+                    <div id="emotional-care" class="care-info">
+                        <p>This program cares on the emotional aspect of clients that suffering from <strong>Violence and Aggression</strong>, <strong>Sleep Problems</strong>, <strong>Hallucinations and Delusions</strong>, <strong>Depression and Anxiety</strong>, and <strong>Losing Personal Items</strong>.</p>
+                        <p>For more information regarding this program, kindly <a href="services.html" target="_blank" rel="noopener"><strong>click here</strong></a>.</p>
+                    </div>
+                    <a href="#sec-contacts" class="quote"><span>Get a quote</span></a>
+                </div>
+                <div class="sr-img">
+                    <img src="assets/img/img-1.jpg" class="care-img" />
+                </div>
+                <div class="choices">
+                    <ul class="option">
+                        <li><i class="lni lni-user"></i><a href="#sec-services" onclick="changeCareImage('assets/img/img-1.jpg');changeCareDesc('Personal Care');changeCareInfo('personal-care');">Personal Care</a></li>
+                        <li><i class="lni lni-weight"></i><a href="#sec-services" onclick="changeCareImage('assets/img/img-5.jpg');changeCareDesc('Physical Care');changeCareInfo('physical-care')">Physical Care</a></li>
+                        <li><i class="lni lni-dinner"></i><a href="#sec-services" onclick="changeCareImage('assets/img/img-6.jpg');changeCareDesc('Food and Nourishment');changeCareInfo('food-nourishment')">Food and Nourishment</a></li>
+                        <li><i class="lni lni-home"></i><a href="#sec-services" onclick="changeCareImage('assets/img/img-4.jpg');changeCareDesc('House Care');changeCareInfo('house-care')">House Care</a></li>
+                        <li><i class="lni lni-heart"></i><a href="#sec-services" onclick="changeCareImage('assets/img/img-9.jpg');changeCareDesc('Emotional Care');changeCareInfo('emotional-care')">Emotional Care</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="service-info">
+            <div class="content">
+                <h2>The Services We Provide</h2>
+                <p>Amazing Care provides in-home care services that range from companion and homemaking services to personal Care. Our mission is to promote quality of life and maintain independence, security and comfort to all our clients. Our services are Be Safe at Home, Memory Care, Respite Care and Dial my Ride.</p>
+            </div>
+        </section>
+        <section id="sec-about" class="about">
+            <div class="content">
+                <div class="left">
+                    <h3>About Us</h3>
+                    <p><span>AMAZING CARE</span>, a licensed and insured In-Home Care agency, specializes in providing personalized in-home care plans specifically designed to address the many challenges our clients face.</p>
+                    <p>We understand your frustrations when life has changed your loved ones ability to live independently.</p>
+                    <p><span>AMAZING CARE</span> offers help ranging from occasional light housekeeping to continuous live-in support to those who are recovering from an illness or experiencing limitations in their activities.</p>
+                    <div class="cta">
+                        <a href="#sec-contacts" class="quote"><span>Get a quote</span></a>
+                        <a href="gift.html" target="_blank" rel="noopener" class="quote"><span>Get your gift</span></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/img/bg.jpg" />
+                </div>
+            </div>
+        </section>
+        <section class="about-info">
+            <div class="content">
+                <blockquote>Our mission is to <span>PROMOTE QUALITY OF LIFE</span> by providing an <span>UNDERSTANDING, LOVING</span> and <span>COMPASSIONATE CAREGIVER</span> twenty four hours a day, seven days a week.</blockquote>
+                <!-- <blockquote> <span>AMAZING CARE</span> offers help ranging from occasional light housekeeping to continuous live-in support to those who are recovering from an illness or experiencing limitations in their activities.</blockquote> -->
+            </div>
+        </section>
+        <section id ="sec-brochure" class="brochure">
+            <div class="content">
+                <img src="assets/img/img-11.jpg"/>
+                <h3>Download Our FREE Brochure</h3>
+                <p>Please download our FREE Brochure to share with a friend or family member.</p>
+                <a href="../amazing-care/assets/brochure/brochure.pdf" target="_blank" rel="noopener" class="quote"><span>Free Brochure</span></a>
+            </div>
+        </section>
+        <section id="sec-contacts" class="contacts">
+            <div class="content">
+                <div class="email">
+                    <h3>Get A Quote</h3>
+                    <form id="quote-form" method="post">
+                        <div>
+                            <input id="name" type="text" class="text text-normal" placeholder="Name">
+                            <input id="email" type="text" class="text text-normal" placeholder="Email">
+                        </div>
+                        <div>
+                            <textarea id="message" rows="4" cols="50" class="text text-area" placeholder="message"></textarea>
+                        </div>
+                        <div>
+                            <a id="btnSubmit" class="quote" onclick="sendEmail()"><span>Send</span></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>We are more than happy to answer your queries and we value any feedback and suggestions you may have.</p>
+                    <p>Please email us through the form to the left, or call us during our office hours listed below to schedule an appointment today.</p>
+                    <div>
+                        <p><strong>Business Address</strong></p>
+                        <p>4300 Commerce Court, Suite 300-5 Lisle, IL 60532</p>
+                        <p>Telephone: 630-364-1727</p>
+                        <p>Email: amazingcare7@yahoo.com</p>
+                    </div>
+                    <div>
+                        <p><strong>Office Hours</strong></p>
+                        <p>Mon - Fri: 9:00 AM to 5:00 PM</p>
+                        <p>Sun: (By Appointment)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="content">
+                <p><strong>AMAZING <span>CARE</span></strong></p>
+                <div class="motto">
+                    <ul>
+                        <li><a>Comfort</a></li>
+                        <li><a>Assurance</a></li>
+                        <li><a>Respect</a></li>
+                        <li><a>Encouragement</a></li>
+                    </ul>
+                </div>
+                <p class="description">We understand your frustrations when life has changed your loved ones ability to live independently.  Amazing Care offers help ranging from occasional light housekeeping to continuous live-in support to those who are recovering from an illness or experiencing limitations in their activities.</p>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu').toggleClass('active')
+                })
+            })
+            $(document).ready(function(){
+                $('.close-toggle').click(function(){
+                    $('.menu').toggleClass('active')
+                })
+            })
+        </script>
+        <script type="text/javascript">
+        function changeCareImage(image){
+            document.querySelector('.care-img').src = image;
+        }
+        function changeCareDesc(title){
+            document.getElementById('care-id').innerHTML = title;
+        }
+        function changeCareInfo(id){
+            document.getElementById('personal-care').className = 'care-info';
+            document.getElementById('physical-care').className = 'care-info';
+            document.getElementById('food-nourishment').className = 'care-info';
+            document.getElementById('house-care').className = 'care-info';
+            document.getElementById('emotional-care').className = 'care-info';
+
+            document.getElementById(id).className = 'care-active'
+        }
+        </script>
+    </body>
+</html>

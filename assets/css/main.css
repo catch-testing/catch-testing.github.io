@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+header,
+.navigation
+{
+    position: fixed;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #dcdde1;
+}
+header
+{        
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #dcdde1;
+    z-index: 999;
+}
+header .contact
+{
+    width: 60%;
+    color: #000;
+    font-size: 0.8em;
+}
+.menu-toggle 
+{
+    display: none;
+    font-size: 2.5em;
+}
+.details,
+.menu
+{
+    display: flex;
+}
+header .contact .details
+{
+    justify-content: flex-start;
+}
+header .contact .details i
+{
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #44bd32;
+}
+.details li,
+.menu li,
+.option li
+{
+    list-style: none;
+}
+header .contact .details li:nth-child(1)
+{
+    margin-right: 20px;
+}
+header .social
+{
+    width: 40%;
+}
+header .social .details
+{
+    justify-content: flex-end;
+}
+header .social .details li
+{
+    margin: 0 10px;
+}
+header .social .details li:nth-child(3)
+{
+    margin-right: 0;
+}
+header .social .details li .icons
+{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: #f5f6fa;
+    color: #000;
+    transition: .3s;
+}
+header .social .details li a:hover .icons
+{
+    color: #fff;
+    background: #44bd32;
+    transition: .3s;
+}
+header .social .details li i
+{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    font-size: 0.9em;    
+}
+.navigation
+{
+    top: 51px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.navigation .logo,
+.navigation .menu li a,
+.navigation .quote,
+.banner .content a,
+.services .content .info .quote,
+.about .content div:nth-child(1) .quote,
+.contacts .content .email .quote,
+.brochure .content .quote
+{
+    text-decoration: none;
+}
+.contacts .content .email .quote
+{
+    cursor: pointer;
+}
+.navigation .logo
+{
+    width: 30%;    
+    font-size: 2em;
+    font-weight: 800;
+    color: #000;
+}
+.navigation .logo span,
+.footer .content span
+{
+    color: #4cd137;
+}
+.navigation .menu
+{
+    width: 60%;
+    align-items: left;
+} 
+.navigation .menu li
+{
+    margin: 0 20px;
+}
+.navigation .menu li:nth-child(1)
+{
+    margin-left: 0;
+}
+.navigation .menu li a
+{
+    color: #000;
+    font-size: 1em;
+    font-weight: 300;
+}
+.navigation .menu li a:hover
+{    
+    color: #4cd137;
+    transition: .3s;
+}
+.navigation .quote
+{
+    color: #000;
+}
+.navigation .quote div,
+.services .content .info .quote,
+.about .content div:nth-child(1) .quote,
+.contacts .content .email .quote,
+.brochure .content .quote
+{
+    height: 50px;
+    width: 150px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid #000;
+    font-weight: 400;
+    transition: .3s;
+}
+.navigation .quote div:hover,
+.services .content .info a:hover,
+.about .content div:nth-child(1) a:hover,
+.contacts .content .email a:hover,
+.all-faq .content .faq .item .contact-for-faq .content a:hover,
+.brochure .content a:hover
+{
+    background: #44bd32;
+    color: #fff;
+    border: 2px solid #44bd32;
+    transition: .3s;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    background: url(../img/img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner .content
+{
+    max-width: 550px;
+}
+.banner .content h2
+{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+.banner .content h2 span
+{
+    font-weight: 800;
+    color: #44bd32;
+}
+.banner .content p,
+.service-info .content p
+{
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+}
+.banner .content p
+{   
+    color: #fff;
+    margin: 15px 0 35px;
+}
+.banner .content .call
+{
+    height: 50px;
+    width: 200px;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    padding: 12px 30px;
+    background: #44bd32;
+    box-shadow: 0 0 5px #44bd32;
+    color: #fff;   
+    text-transform: uppercase;
+}
+.banner .content .call i
+{
+    margin-right: 10px;
+}
+.services
+{
+    height: auto;
+    padding: 130px 100px;
+}
+.services .content
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.services .content .info,
+.services .content .choices
+{
+    width: 40%;
+}
+.services .content .info
+{
+    padding-right: 20px;
+}
+.services .content .choices
+{
+    padding-left: 20px;
+}
+.services .content .sr-img
+{
+    width: 20%;
+}
+.services .content .info h3,
+.services .content .info p,
+.services .content .quote,
+.contact .content .email .quote,
+.services .content .choices .option li a
+{
+    color: #000000;
+}
+.services .content .info h3,
+.about .content div:nth-child(1) h3,
+.contact .content .email h3,
+.contact .content .contact-info h3,
+.brochure .content h3
+{
+    font-weight: 800;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+.services .content .info p,
+.about .content div:nth-child(1) p,
+.contacts .content .contact-info p,
+.brochure .content p
+{
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.services .content .quote,
+.contacts .content .email .quote,
+.about .content div:nth-child(1) .quote,
+.all-faq .content .faq .item .contact-for-faq .content .quote,
+.brochure .content .quote
+{
+    text-transform: uppercase;
+}
+.services .content .sr-img
+{
+    width: 100%;
+}
+.services .content .sr-img img
+{
+    height: auto;
+    width: 100%;
+    padding: 0 20px;
+    border-right: 1px solid #dcdde1;
+    border-left: 1px solid #dcdde1;
+}
+.services .content .choices .option li
+{
+    padding: 26px 0;
+    border-bottom: 1px solid #dcdde1;
+}
+.services .content .choices .option li:nth-child(5)
+{
+    border-bottom: none;
+}
+.services .content .choices .option li i
+{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #4cd137;
+    margin-right: 15px;
+}
+.services .content .choices .option li a
+{
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.services .content .choices .option li a:hover
+{
+    color: #4cd137;
+    transition: .3s;
+}
+.services .content .info a:nth-child(1):hover
+{
+    background: none !important;
+    border: none;
+}
+.services .content .info a:nth-child(1),
+.services .content .info a:nth-child(1):visited
+{
+    text-decoration: none;
+    color: #4cd137;
+}
+.service-info,
+.about-info
+{
+    height: 50vh;
+    width: 100%;
+    padding: 100px;
+}
+.about-info
+{
+    height: auto;
+}
+.service-info
+{
+    position: relative;
+    background: url('../img/img-2.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+.service-info:before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: #44bd32;
+    opacity: .7;
+}
+.service-info .content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+.service-info .content h2
+{
+    font-weight: 600;
+    font-size: 1.6em;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.care-active
+{
+    display: inline;
+}
+.care-info
+{
+    display: none;
+}
+.about
+{
+    height: auto;
+    width: 100%;
+    padding: 130px 100px;
+}
+.contacts,
+.brochure
+{
+    padding: 130px 100px;
+}
+.about .content .left .cta
+{
+    display: flex;
+    flex-direction: row;
+}
+.about .content .left .cta .quote
+{
+    margin: 5px;
+}
+.about .content .left .cta .quote:nth-child(2)
+{
+    width: 170px;
+}
+.about .content,
+.contacts .content
+{
+    display: flex;
+}
+.about .content .left
+{
+    width: 40%;
+    margin-right: 20px;
+}
+.about .content .left p span
+{
+    color: #44bd32;
+    font-weight: 500;
+}
+.about .content .left .quote,
+.contacts .content .email .quote,
+.brochure .content .quote
+{
+    color: #000000;
+}
+.about .content .right
+{
+    width: 60%;
+    margin-left: 20px;
+}
+.about .content .right img
+{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dcdde1;
+}
+.about-info
+{
+    background: linear-gradient(to bottom right, #44bd32, #4cd137);
+}
+.about-info .content
+{
+    color: #ffffff;
+}
+.about-info .content blockquote
+{
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+.about-info .content blockquote span
+{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.contacts .content,
+.brochure .content
+{
+    width: 100%;
+}
+.contacts .content .email
+{
+    width: 60%;
+    margin-right: 10px;
+}
+.contacts .content .contact-info
+{
+    width: 40%;
+    margin-left: 10px;
+}
+.contacts .content .email .text
+{
+    padding: 10px;
+    margin: 10px 0;
+    color: #353b48;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+.contacts .content .email .text:nth-child(1)
+{
+    margin-right: 10px;
+}
+.contacts .content .email .text:nth-child(2)
+{
+    margin-left: 10px;
+}
+.contacts .content .email .text.text-normal
+{
+    width: 45%;
+}
+.contacts .content .email .text.text-area
+{
+    width: 93%;
+    resize: none;
+}
+.contacts .content .email form div:nth-child(3)
+{
+    margin-top: 20px;
+}
+.contacts .content .contact-info
+{
+    display: block;
+}
+.contacts .content .contact-info div
+{
+    margin-top: 30px;
+}
+.contacts .content .contact-info p
+{
+    margin-bottom: 5px;
+}
+.brochure .content
+{
+    text-align: center;
+}
+.brochure .content h3
+{
+    margin-bottom: 0 !important;
+}
+.brochure .content img
+{
+    height: 500px;
+    width: auto;
+    padding: 20px;
+    border: 1px solid #dcdde1;
+    margin-bottom: 50px;
+}
+.brochure .content p
+{
+    margin-bottom: 40px !important;
+}
+.footer
+{
+    height: auto;
+    width: 100%;
+    padding: 100px;
+    background: #000;
+}
+.footer .content
+{
+    text-align: center;
+}
+.footer .content p strong
+{
+    font-weight: 800;
+    font-size: 2em;
+    color: #fff;
+    letter-spacing: 0.2em;
+}
+.footer .content .description
+{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #fff;
+}
+.motto
+{
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .content ul
+{
+    position: relative;
+    display: flex;
+}
+.footer .content ul li
+{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer .content ul li a
+{
+    display: inline-block;
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.footer .content ul li:nth-child(1) a
+{
+    border-left: none;
+}
+.all-services,
+.all-faq,
+.all-gift
+{
+    margin-top: 120px;
+    width: 100%;
+    height: auto;
+    padding: 100px;
+}
+.all-services .content .care,
+.all-faq .content .faq,
+.all-gift .content .gift
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.all-services .content .care .item,
+.all-faq .content .faq .item,
+.all-gift .content .gift .item
+{
+    flex: 50%;
+    padding-right: 20px;
+}
+.all-services .content h2,
+.all-faq .content h2,
+.all-gift .content h2
+{
+    margin-bottom: 20px;
+}
+.all-services .content .care .item h3
+{
+    text-transform: uppercase;
+}
+.all-services .content .care .item .info .title,
+.all-faq .content .faq .item .info .title,
+.all-gift .content .gift .item .info .title
+{
+    margin: 20px 0 5px 0;
+    font-weight: 700;
+}
+.all-services .content .care .item .info p,
+.all-faq .content .faq .item .info p,
+.all-gift .content .gift .item .info p
+{
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.all-faq .content .faq .item .contact-for-faq
+{
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid #dcdde1;
+}
+.all-faq .content .faq .item .contact-for-faq .content
+{
+    text-align: center;
+}
+.all-faq .content .faq .item .contact-for-faq .content p
+{
+    font-weight: 700;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.all-faq .content .faq .item .contact-for-faq .content .quote
+{
+    height: 50px;
+    width: 150px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid #000;
+    font-weight: 400;
+    transition: .3s;
+}
+.all-faq .content .faq .item .contact-for-faq .content a
+{
+    text-decoration: none;
+    color: #000;
+}
+.all-gift .content .gift .item:nth-child(2)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-gift .content .gift .item img
+{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dcdde1;
+
+}

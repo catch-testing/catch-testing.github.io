@@ -195,7 +195,7 @@ header .social .details li i
     width: 100%;
     min-height: 100vh;
     padding: 0 100px;
-    background: url(../img/img-3.jpg);
+    background: url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -204,7 +204,7 @@ header .social .details li i
 }
 .banner .content
 {
-    max-width: 550px;
+    max-width: 400px;
 }
 .banner .content h2
 {

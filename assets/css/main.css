@@ -193,10 +193,14 @@ header .social .details li i
 {
     position: relative;
     width: 100%;
+    /* max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; */
     min-height: 100vh;
     padding: 0 100px;
     background: url(../img/banner.jpg);
-    background-position: center;
+    background-position: top;
     background-size: cover;
     display: flex;
     justify-content: flex-start;
@@ -252,7 +256,11 @@ header .social .details li i
 .services
 {
     height: auto;
-    padding: 130px 100px;
+    padding: 130px 0;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .services .content
 {
@@ -425,13 +433,20 @@ header .social .details li i
 .about
 {
     height: auto;
+    padding: 130px 0;
+    max-width: 1200px;
     width: 100%;
-    padding: 130px 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contacts,
 .brochure
 {
-    padding: 130px 100px;
+    padding: 130px 0;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .about .content .left .cta
 {
